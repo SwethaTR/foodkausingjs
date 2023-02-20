@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FOODKA</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    window.onload = function() { document.getElementsByClassName('transition')[0].classList.add('translateAnimationClass'); }
+
+
+
+
+    var a;
+function display1(){
+if(a==1)
+{
+  document.getElementById("image").style.display="inline";
+  return a=0;
+}
+else{
+  
+  document.getElementById("image").style.display="none";
+  return a=1;
+
+}
+
+}
+
+
+let timer;
+    let turn = 0;
+    function turnOn() {
+      timer = setInterval(turnFan, 500);
+      let x = document.getElementsByClassName("btn");
+      x.disabled = true;
+    }
+    
+    function turnOff() {
+      clearInterval(timer);
+      let x = document.getElementByClassName("btn");
+      x.disabled = false;
+    }
+    
+    function turnFan() {
+      let x = document.getElementById("image1");
+      turn += 60;
+      x.style.transform = "rotate("+ (turn % 360) +"deg)"
+    }
+
+
+
+
+function setnewimage(){
+document.getElementById("image").src="yes.png";
+       }
+       function setoldimage(){
+        document.getElementById("image").src="foodka1.png";
+}
+
+
+
+
+
+
+
+
+  </script>
+  
+
+  </head>
+  <header class="header">
+   
+    <img src="unnamed.jpg" width="100px" height="100px"/>
+     
+      <nav class="nav-items">
+        <div class="nav__link hide">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Catalog</a>
+       </div>
+      </nav>
+    </header>
+   
+  <body >
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1  class="rotator animation" style="font-size:50px; color:orange;">FOODKA</h1>
+  
+    <div class="about-me" style="width: 100%;">
+    
+      <div class="about-me-text" style="float:left; width: 50%">
+        <h2>Quality food 
+        Delivered!</h2>
+        <p>Order food online from FreshMenu. Choose from a wide range of cuisines and categories for food delivery. Get fresh home delivered food at your doorstep from FreshMenu..</p>
+        <div id="container">
+            <button  onclick="display1()">Get Started</button>
+           </div>
+
+	
+
+      </div>
+      <div class="about-me-text" style="float:right; width: 50%">
+          
+            
+      
+      <img id="image" onmouseover="setnewimage()" onmouseout="setoldimage()" src="foodka1.png" alt="me" width="450px" height="450px">
+    </div>
+    
+
+
+    
+   
+      
+
+
+    </div>
+
+
+
+<div class="about-me" style="width: 100%;">
+      <div class="about-me-text" style="float:left; width: 20%">
+          
+            
+      
+        <img  id="image1" src="foodka2.png" alt="me" width="450px" height="450px">
+      </div>
+      <div class="about-me-text" style="float:right; width: 60%">
+        <h2 id="demo">Traditional</h2>
+        <h2 id="demo1">Vegeterian Food</h2>
+        <p >Vegetaian food is good for health and that is what we provided </p>
+        <p >here in FoodKa,as we focus on customer health care before</p>
+        <p > money reaches the table</p>
+        <div id="container1">
+          <button class="btn"  onclick="turnOn()">Get started</button>
+         </div>
+         
+      </div>
+
+      
+      
+
+
+    
+   
+      
+
+
+    </div>
+
+    <h1 > OUR HAPPY CUSTOMER</h1>
+    <div class="about-me" style="width: 100%;">
+      <div class="about-me-text" style="width:40%">
+        <img class="heart animated css"src="foodka3.png"alt="me" width="450px" height="450px">
+      </div>
+      
+      <div  style="width:30%">
+
+        <div id="abc">
+          <h3    style="color:orange">John Morrison</h3>
+          When it comes to making decisions, we humans aren’t always independent thinkers. From buying our morning coffee to big-ticket items like a new car, we depend on our network’s opinions, advice, or perspectives for making the right decision. 
+        </div>
+       
+      </div>
+     
+      
+    
+      
+      <div  style="width:30%">
+        <div class="box2"></div>
+       
+        <div id="abc">
+         
+          <h3  style="color:orange">Andrew Banks</h3>
+        
+          When it comes to making decisions, we humans aren’t always independent thinkers. From buying our morning coffee to big-ticket items like a new car, we depend on our network’s opinions, advice, or perspectives for making the right decision. 
+         
+        </div>
+       
+      </div>
+      
+      
+      </div>
+
+
+<section id="notice-board for student">
+  <div class="notice-container">
+    <div class="row">
+    
+    <div class="notice-area">
+    
+   <div class="first-box">
+
+  <div class="notice-heading">
+    <h4 class="line">
+    <span>FOOD BOARD</span></h4>
+  </div>
+  
+<div class="second-box">
+  <br>
+ <div class="third-box">
+   
+
+<marquee direction="up" scrollamount="5px" onmouseover= "this.stop();" onmouseout="this.start();">
+
+
+<div class="alert-box simple-alert" >
+    <a style="text-decoration: n one;" href="#">Spaghetti can be eaten most successfully if you inhale it like a vacuum cleaner.</a>  
+</div>
+<div class="alert-box simple-alert" >
+    <a style="text-decoration: none;" href="#">Part of the secret of a success in life is to eat what you like and let the food fight it out inside.</a>  
+</div>
+<div class="alert-box simple-alert" >
+    <a style="text-decoration: none;" href="#">One cannot think well, love well, sleep well, if one has not dined well.</a>  
+</div>
+<div class="alert-box simple-alert" >
+    <a style="text-decoration: none;" href="#">If you do not tell the truth about yourself you cannot tell it about other people.</a>  
+</div>
+<div class="alert-box simple-alert" >
+    <a style="text-decoration: none;" href="#">It is only with the heart that one can see rightly; what is essential is invisible to the eye.</a>  
+</div>
+</marquee>
+    
+  </div></div>
+</div></div>
+ 
+ 
+ 
+ <div class="upcoming-event-section">
+ 
+  <div class="event-header">
+      <h4> <span style="color: #f93"> OPENING TIME</span></h4>
+         <span class="event-line"></span>
+   </div>
+     
+     
+ <div class="event-body"> 
+   <div class="event-box"> 
+
+     
+
+   <div class="event-wrapper"><a href="">
+       <h5 class="title"> BREAKFAST</h5>
+       <div class="time">6:00 am - 11:00 am</div>
+      </a>
+   </div>
+</div>
+
+ 
+<div class="event-box"> 
+
+ 
+
+<div class="event-wrapper"><a href="">
+   <h5 class="title"> LUNCH</h5>
+   <div class="time">12:30 PM -4:00 PM</div>
+  </a>
+</div>
+</div>
+
+<div class="event-box"> 
+
+  
+
+<div class="event-wrapper"><a href="">
+   <h5 class="title"> DINNER</h5>
+   <div class="time">7:00 PM- 10:00 PM</div>
+  </a>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+      
+
+    
+
+      <footer class="con" >
+        <div class="content">
+          <div class="top">
+            <div class="logo-details">
+              <span style="color:orange">FOODKA</span>
+            </div>
+          
+          </div>
+          
+          <div class="link-boxes">
+            <ul class="box">
+               <li class="link_name" style="color:orange">About FoodKa</li>
+              <li> <a href="About-us.html">We are just the food </li>
+              <li> <a href="About-us.html">that anyone had been waiting</li>
+            </ul>
+            <ul class="box">
+              <li class="link_name" style="color:orange">Information</li>
+              <li><a href="index.html">About Us</a></li>
+              <li><a href="contact-us.html">More Research</a></li>
+              <li><a href="About-us.html">Food Recipes</a></li>
+              <li><a href="About-us.html">Our chefs</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name" style="color:orange">More Links</li>
+              <li><a href="admission-form.html">Gallery</a></li>
+              <li><a href="#notice-board for student">Behind the scene</a></li>
+              <li><a href="#">Inside our shop</a></li>
+              <li><a href="#">Pricing</a></li>
+              
+            </ul>
+        
+           
+            
+            <ul class="box input-box">
+              <li class="link_name" style="color:orange">Subscribe</li>
+              <input type="email" placeholder="Enter your email">
+              <li><button class="btn">Submit</button></li>
+            </ul>
+          </div>
+        </div>
+        
+      </footer>
+  
+      <section>
+        
+    </section>
+      
+
+  </body>
+</html>
